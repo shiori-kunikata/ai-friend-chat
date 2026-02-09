@@ -1,0 +1,38 @@
+.tabBar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.tabLabel {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  letter-spacing: 0.56px;
+  white-space: nowrap;
+}
+
+.indicator {
+  width: 12px;
+  height: 4px;
+  background-color: var(--color-red);
+  border-radius: 20px;
+}
+
+.active .tabLabel {
+  color: var(--color-text);
+}

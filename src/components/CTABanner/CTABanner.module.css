@@ -1,0 +1,50 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 335px;
+  height: 96px;
+  padding: 16px;
+  background-color: var(--color-green);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.bgPattern {
+  position: absolute;
+  left: -88px;
+  top: -66px;
+  width: 450px;
+  height: 512px;
+  opacity: 0.12;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+.text {
+  flex: 1;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: 0.56px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}

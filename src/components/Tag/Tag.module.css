@@ -1,0 +1,34 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 6px;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  text-align: center;
+  line-height: normal;
+  flex-shrink: 0;
+}
+
+/* Color variants */
+.green {
+  background-color: var(--color-white);
+  color: var(--color-green);
+  border-radius: var(--radius-sm);
+}
+
+.lightbrown {
+  background-color: var(--color-text-back);
+  color: var(--color-text);
+  border-radius: var(--radius-full);
+}
+
+/* Size variants */
+.md {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+}
+
+.sm {
+  font-size: 10px;
+  letter-spacing: 0.4px;
+}

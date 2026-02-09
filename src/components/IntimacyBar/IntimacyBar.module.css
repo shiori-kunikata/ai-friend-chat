@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.label {
+  color: var(--color-gray-500);
+}
+
+.value {
+  font-weight: 600;
+  color: var(--color-gray-800);
+}
+
+/* プログレスバー */
+.track {
+  width: 100%;
+  height: 12px;
+  background-color: var(--color-gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.7s ease-out;
+}
+
+.barGray {
+  background-color: var(--color-gray-400);
+}
+
+.barBlue {
+  background-color: var(--color-blue-400);
+}
+
+.barPurple {
+  background-color: var(--color-purple-400);
+}
+
+.barPink {
+  background-color: var(--color-pink-500);
+}
+
+/* ステージラベル */
+.stages {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.stageLabel {
+  position: absolute;
+  font-size: 12px;
+  color: var(--color-gray-500);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.stageLabel:first-child {
+  transform: translateX(0);
+}

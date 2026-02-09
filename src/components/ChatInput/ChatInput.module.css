@@ -1,0 +1,100 @@
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid var(--color-gray-200);
+  padding: 16px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.inner {
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* テキスト入力 */
+.input {
+  flex: 1;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-full);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  color: var(--color-text);
+  background: var(--color-white);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: var(--color-purple-400);
+  box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.2);
+}
+
+.input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 送信ボタン */
+.sendButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 24px;
+  background: linear-gradient(to right, var(--color-purple-500), var(--color-pink-500));
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
+}
+
+.sendButton:hover:not(:disabled) {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+}
+
+.sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* リセットボタン */
+.resetButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  color: var(--color-gray-500);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.resetButton:hover:not(:disabled) {
+  color: var(--color-gray-700);
+  text-decoration: underline;
+}
+
+.resetButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

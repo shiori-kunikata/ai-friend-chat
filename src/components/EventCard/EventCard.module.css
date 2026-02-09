@@ -1,0 +1,140 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 120px;
+  padding: 8px 8px 12px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0 8px 0 rgba(191, 133, 81, 0.12);
+}
+
+.card:first-child {
+  box-shadow: 0 0 8px 0 rgba(252, 235, 220, 0.32);
+}
+
+/* 画像エリア */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 22px;
+  overflow: hidden;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 128px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 残り台数バッジ */
+.slotBadge {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding: 2px 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+}
+
+.slotText {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.slotCount {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.48px;
+}
+
+.slotCount.urgent {
+  color: var(--color-red);
+}
+
+.slotTotal {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.48px;
+}
+
+/* コンテンツ */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  flex: 1;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.56px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.metaRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.metaText {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.tagsRow {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+/* お気に入りボタン */
+.favoriteButton {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  z-index: 2;
+}
